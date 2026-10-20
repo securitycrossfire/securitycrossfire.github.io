@@ -1,7 +1,354 @@
----
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-layout: home
-author_profile: true
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Yashon Ochieng — Cyber Defender · Threat Hunter · Detection Engineer</title>
+<meta name="description" content="Yashon Ochieng is a blue-team cybersecurity professional focused on threat hunting, detection engineering, incident response, threat intelligence, cloud security and security automation." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+<script src="https://unpkg.com/lenis@1.0.42/dist/lenis.min.js"></script>
+<link rel="icon" type="image/svg+xml" href="logo-mark.svg">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- background -->
+<div class="grid-bg"></div>
+<div class="noise"></div>
+
+<!-- cursor -->
+<div class="cursor-ring"></div>
+<div class="cursor"></div>
+
+<!-- loader -->
+<div class="loader">
+  <div class="loader-mark">YASHON // DEFENSE ONLINE</div>
+  <div class="loader-bar"></div>
+</div>
+
+<!-- scroll progress -->
+<div class="scroll-progress"><div class="scroll-progress-bar"></div></div>
+
+<!-- nav -->
+<nav class="nav">
+  <a href="#" class="nav-logo">
+    <img src="logo-mark.svg" alt="Yashon Ochieng" class="brand-logo" style="width:38px;height:38px">
+    <span style="font-family:'JetBrains Mono',monospace;font-weight:700;font-size:17px">Yashon <span style="color:var(--green);font-weight:700">Ochieng</span></span>
+  </a>
+  <div class="nav-links">
+    <a href="#about">01 / About</a>
+    <a href="#stack">02 / Arsenal</a>
+    <a href="#work">03 / Work</a>
+    <a href="#contact">04 / Connect</a>
+  </div>
+  <a href="#contact" class="nav-cta"><span class="dot"></span>Open to opportunities</a>
+</nav>
+
+<!-- hero -->
+<section class="hero">
+  <div class="hero-badge-row">
+    <img src="logo-mark.svg" alt="Yashon Ochieng">
+    <div class="txt">
+      <span class="top">// Yashon Ochieng</span>
+      <span class="bot">detect. hunt. investigate. defend.</span>
+    </div>
+    <span class="pill">BLUE TEAM</span>
+  </div>
+  <div class="hero-meta">
+    <span><span class="marker"></span>profile · 2026</span>
+    <span>cyber defender + threat hunter</span>
+    <span>shell · defender@yashon ~ #</span>
+  </div>
+  <h1 class="hero-title">
+    <span class="line"><span>I defend the <em>digital world</em></span></span>
+    <span class="line"><span>from <em>cyber attacks.</em></span></span>
+  </h1>
+  <p class="hero-sub">I'm <b>Yashon Ochieng</b> — a blue-team cybersecurity professional focused on <b>threat hunting</b>, <b>detection engineering</b>, <b>incident response</b>, <b>cloud security</b> and <b>threat intelligence</b>. I turn attacker behavior into actionable defense and build security capabilities that help organizations detect, investigate and stop threats faster.</p>
+  <div class="hero-tagline">DETECT · HUNT · INVESTIGATE · DEFEND</div>
+  <div class="hero-actions">
+    <a href="#work" class="btn btn-primary">See what I defend <span class="arrow">→</span></a>
+    <a href="#stack" class="btn btn-ghost">Explore my arsenal <span class="arrow">↓</span></a>
+    <a href="https://github.com/securitycrossfire" target="_blank" class="btn btn-ghost">GitHub <span class="arrow">↗</span></a>
+  </div>
+  <div class="hero-cta-strip">Blue Team → <span style="color:var(--green)">Threat Hunting</span><span style="color:var(--line-2)">·</span><span style="color:var(--green)">Detection Engineering</span><span style="color:var(--line-2)">·</span><span style="color:var(--green)">Incident Response</span></div>
+  <div class="hero-stats">
+    <div class="hs"><div class="v"><em>6+</em></div><div class="l">Years in security</div></div>
+    <div class="hs"><div class="v">24/7</div><div class="l">Defender mindset</div></div>
+    <div class="hs"><div class="v">MITRE</div><div class="l">ATT&CK driven</div></div>
+    <div class="hs"><div class="v"><em>IR</em></div><div class="l">Incident response</div></div>
+    <div class="hs"><div class="v">CTI</div><div class="l">Threat intelligence</div></div>
+  </div>
+  <div class="hero-side">
+    <div class="hs-card">
+      <div class="hs-head"><span>// status</span><span class="live">ONLINE</span></div>
+      <div class="hs-stamp">defender@yashon<br>~ #_</div>
+      <div class="hs-row"><span>Role</span><b>blue team</b></div>
+      <div class="hs-row"><span>Focus</span><b>hunt · detect · respond</b></div>
+      <div class="hs-row"><span>Stack</span><b>Falcon · SIEM · Python</b></div>
+      <div class="hs-row"><span>Mode</span><b>defense in depth</b></div>
+    </div>
+    <div class="hs-card">
+      <div class="hs-head"><span>// mission</span><span style="color:var(--green)">DEFEND</span></div>
+      <div style="color:var(--ink);font-size:12px;line-height:1.55;margin:6px 0 10px">Find what others miss. Understand the adversary. Build better detections. Respond decisively.</div>
+    </div>
+    <div class="hs-card">
+      <div class="hs-head"><span>// current focus</span><span>security</span></div>
+      <div style="color:var(--ink);font-size:11px;font-family:'JetBrains Mono',monospace;line-height:1.6">
+        <div>$ analyze --adversary</div>
+        <div style="color:var(--green)">✓ detection → hunt → response</div>
+        <div style="color:var(--muted)">→ continuously improving defense</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll"><div class="line"></div>SCROLL</div>
+</section>
+
+<!-- marquee -->
+<div class="marquee">
+  <div class="marquee-track">
+    <span><em>Threat Hunting</em> <span class="star">✦</span> Detection Engineering <span class="star">✦</span> Incident Response <span class="star">✦</span> <em>Threat Intelligence</em> <span class="star">✦</span> Cloud Security <span class="star">✦</span> DFIR <span class="star">✦</span> <em>Security Automation</em> <span class="star">✦</span> Purple Team <span class="star">✦</span> </span>
+    <span><em>Threat Hunting</em> <span class="star">✦</span> Detection Engineering <span class="star">✦</span> Incident Response <span class="star">✦</span> <em>Threat Intelligence</em> <span class="star">✦</span> Cloud Security <span class="star">✦</span> DFIR <span class="star">✦</span> <em>Security Automation</em> <span class="star">✦</span> Purple Team <span class="star">✦</span> </span>
+  </div>
+</div>
+
+<!-- about / bio -->
+<section id="about">
+  <div class="sec-num">01</div>
+  <div class="about-grid">
+    <div class="about-text reveal">
+      <div class="section-label">01 · whoami</div>
+      <h2 class="section-title">Blue teamer. Threat hunter. <em>Cyber defender.</em></h2>
+      <p>I work on the defensive side of cybersecurity, protecting enterprise environments against real-world threats. My work spans <b>security operations, threat hunting, detection engineering, incident response, cloud security and cyber threat intelligence</b>.</p>
+      <p>I investigate complex incidents across endpoint, identity, network and cloud telemetry; engineer threat-informed detections; automate repetitive security workflows; and translate adversary behavior into controls defenders can actually use.</p>
+      <p>I enjoy the part of security where technical investigation meets real-world impact — <b>finding what others miss, understanding how attackers operate, and building better ways to detect and stop them.</b></p>
+      <div class="stats">
+        <div class="stat"><div class="num"><em><span class="count" data-to="6">0</span>+</em></div><div class="label">years in security</div></div>
+        <div class="stat"><div class="num">IR</div><div class="label">incident response</div></div>
+        <div class="stat"><div class="num">TH</div><div class="label">threat hunting</div></div>
+        <div class="stat"><div class="num"><em>DE</em></div><div class="label">detection engineering</div></div>
+      </div>
+    </div>
+    <div class="about-card reveal">
+      <div style="display:flex;align-items:center;gap:14px;margin-bottom:18px">
+        <img src="logo-mark.svg" alt="Yashon Ochieng" class="brand-logo">
+        <div>
+          <div class="role" style="margin:0">// profile.json</div>
+          <h3 style="margin:2px 0 0">Yashon Ochieng</h3>
+        </div>
+      </div>
+      <div class="handle">@securitycrossfire · github</div>
+      <ul class="list">
+        <li><span>Role</span><span>Cyber Defender</span></li>
+        <li><span>Domain</span><span>Blue Team · SecOps · CTI</span></li>
+        <li><span>Focus</span><span>Detect · Hunt · Respond</span></li>
+        <li><span>Cloud</span><span>Azure · Identity · SaaS</span></li>
+        <li><span>Automation</span><span>Python · PowerShell · APIs</span></li>
+        <li><span>Status</span><span style="color:var(--green)">● open to connect</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- tech stack -->
+<section id="stack">
+  <div class="sec-num">02</div>
+  <div style="max-width:1280px;margin:0 auto">
+    <div class="reveal" style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:24px">
+      <div>
+        <div class="section-label">02 · defensive arsenal</div>
+        <h2 class="section-title">Tools I <em>detect, hunt & respond</em> with.</h2>
+      </div>
+    </div>
+  </div>
+  <div class="techgrid-wrap">
+    
+    <div class="tech-row reveal">
+      <div class="tech-row-label"><b>01 · detection & SIEM</b><span class="count">06</span></div>
+      <div class="tech-grid">
+        <div class="tech-tile"><span class="tname" style="font-size:10px;color:var(--ink)">CrowdStrike Falcon</span></div>
+        <div class="tech-tile"><span class="tname" style="font-size:10px;color:var(--ink)">LogRhythm</span></div>
+        <div class="tech-tile"><span class="tname" style="font-size:10px;color:var(--ink)">Microsoft Sentinel</span></div>
+        <div class="tech-tile"><span class="tname" style="font-size:10px;color:var(--ink)">Security Onion</span></div>
+        <div class="tech-tile"><span class="tname" style="font-size:10px;color:var(--ink)">Elastic Stack</span></div>
+        <div class="tech-tile"><span class="tname" style="font-size:10px;color:var(--ink)">Darktrace</span></div>
+      </div>
+    </div>
+
+    <div class="tech-row reveal">
+      <div class="tech-row-label"><b>02 · threat & response</b><span class="count">06</span></div>
+      <div class="tech-grid">
+        <div class="tech-tile"><span class="tname" style="font-size:10px;color:var(--ink)">Cortex XSOAR</span></div>
+        <div class="tech-tile"><span class="tname" style="font-size:10px;color:var(--ink)">MITRE ATT&CK</span></div>
+        <div class="tech-tile"><span class="tname" style="font-size:10px;color:var(--ink)">Sigma</span></div>
+        <div class="tech-tile"><span class="tname" style="font-size:10px;color:var(--ink)">YARA</span></div>
+        <div class="tech-tile"><span class="tname" style="font-size:10px;color:var(--ink)">VECTR</span></div>
+        <div class="tech-tile"><span class="tname" style="font-size:10px;color:var(--ink)">OpenCTI</span></div>
+      </div>
+    </div>
+
+    <div class="tech-row reveal">
+      <div class="tech-row-label"><b>03 · exposure & vulnerability</b><span class="count">06</span></div>
+      <div class="tech-grid">
+        <div class="tech-tile"><span class="tname" style="font-size:10px;color:var(--ink)">Tenable</span></div>
+        <div class="tech-tile"><span class="tname" style="font-size:10px;color:var(--ink)">NetSPI EASM</span></div>
+        <div class="tech-tile"><span class="tname" style="font-size:10px;color:var(--ink)">Defender for Cloud</span></div>
+        <div class="tech-tile"><span class="tname" style="font-size:10px;color:var(--ink)">Imperva WAF</span></div>
+        <div class="tech-tile"><span class="tname" style="font-size:10px;color:var(--ink)">Check Point CTEM</span></div>
+        <div class="tech-tile"><span class="tname" style="font-size:10px;color:var(--ink)">Attack Surface Mgmt</span></div>
+      </div>
+    </div>
+
+    <div class="tech-row reveal">
+      <div class="tech-row-label"><b>04 · cloud & identity</b><span class="count">06</span></div>
+      <div class="tech-grid">
+        <div class="tech-tile"><span class="tname" style="font-size:10px;color:var(--ink)">Microsoft Azure</span></div>
+        <div class="tech-tile"><span class="tname" style="font-size:10px;color:var(--ink)">Entra ID</span></div>
+        <div class="tech-tile"><span class="tname" style="font-size:10px;color:var(--ink)">Microsoft Intune</span></div>
+        <div class="tech-tile"><span class="tname" style="font-size:10px;color:var(--ink)">Defender for Identity</span></div>
+        <div class="tech-tile"><span class="tname" style="font-size:10px;color:var(--ink)">Microsoft Graph</span></div>
+        <div class="tech-tile"><span class="tname" style="font-size:10px;color:var(--ink)">Azure RBAC</span></div>
+      </div>
+    </div>
+
+    <div class="tech-row reveal">
+      <div class="tech-row-label"><b>05 · purple team</b><span class="count">06</span></div>
+      <div class="tech-grid">
+        <div class="tech-tile"><span class="tname" style="font-size:10px;color:var(--ink)">Burp Suite</span></div>
+        <div class="tech-tile"><span class="tname" style="font-size:10px;color:var(--ink)">Nmap</span></div>
+        <div class="tech-tile"><span class="tname" style="font-size:10px;color:var(--ink)">Kali Linux</span></div>
+        <div class="tech-tile"><span class="tname" style="font-size:10px;color:var(--ink)">Active Directory</span></div>
+        <div class="tech-tile"><span class="tname" style="font-size:10px;color:var(--ink)">CRTP</span></div>
+        <div class="tech-tile"><span class="tname" style="font-size:10px;color:var(--ink)">Web & API Testing</span></div>
+      </div>
+    </div>
+
+    <div class="tech-row reveal">
+      <div class="tech-row-label"><b>06 · automation</b><span class="count">06</span></div>
+      <div class="tech-grid">
+        <div class="tech-tile"><span class="tname" style="font-size:10px;color:var(--ink)">Python</span></div>
+        <div class="tech-tile"><span class="tname" style="font-size:10px;color:var(--ink)">PowerShell</span></div>
+        <div class="tech-tile"><span class="tname" style="font-size:10px;color:var(--ink)">Bash</span></div>
+        <div class="tech-tile"><span class="tname" style="font-size:10px;color:var(--ink)">Git</span></div>
+        <div class="tech-tile"><span class="tname" style="font-size:10px;color:var(--ink)">GitHub</span></div>
+        <div class="tech-tile"><span class="tname" style="font-size:10px;color:var(--ink)">REST APIs</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- selected work -->
+<section id="work">
+  <div class="sec-num">03</div>
+  <div style="max-width:1280px;margin:0 auto">
+    <div class="reveal">
+      <div class="section-label">03 · selected impact</div>
+      <h2 class="section-title">Defense built for <em>real-world threats.</em></h2>
+    </div>
+  </div>
+  <div class="bots-grid">
+    <div class="bot-card reveal">
+      <div class="bot-icon">◎</div>
+      <h4>Threat-Informed Detection Engineering</h4>
+      <div class="handle">IOC → TTP → detection → hunt</div>
+      <p>Operationalising threat intelligence into SIEM and EDR detections, mapping adversary behavior to MITRE ATT&CK and continuously tuning coverage for higher-fidelity detection.</p>
+      <div class="features"><span>MITRE ATT&CK</span><span>Sigma</span><span>SIEM</span><span>EDR</span></div>
+      <div class="launch">Detect what matters <span class="arrow">→</span></div>
+    </div>
+    <div class="bot-card reveal">
+      <div class="bot-icon">⌁</div>
+      <h4>Incident Response & DFIR</h4>
+      <div class="handle">triage → contain → eradicate → recover</div>
+      <p>Investigating complex enterprise incidents across endpoint, identity, network, application and cloud telemetry, then driving response through containment and post-incident improvement.</p>
+      <div class="features"><span>DFIR</span><span>Cloud</span><span>Identity</span><span>War Rooms</span></div>
+      <div class="launch">Investigate deeply <span class="arrow">→</span></div>
+    </div>
+    <div class="bot-card reveal">
+      <div class="bot-icon">⚙</div>
+      <h4>Security Automation</h4>
+      <div class="handle">API → enrich → correlate → respond</div>
+      <p>Building Python, PowerShell and SOAR workflows that enrich IOCs, move exposure data into monitoring platforms and reduce repetitive analyst effort.</p>
+      <div class="features"><span>Python</span><span>PowerShell</span><span>XSOAR</span><span>APIs</span></div>
+      <div class="launch">Automate the repetitive <span class="arrow">→</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- operating philosophy -->
+<section>
+  <div class="activity-wrap reveal">
+    <div class="activity-head">
+      <div>
+        <div class="section-label" style="margin-bottom:14px">// defender workflow</div>
+        <h3>Observe. Correlate. Hunt. Contain. Learn. Improve.</h3>
+      </div>
+    </div>
+    <div class="activity-foot">
+      <div><b>Detect</b> · high-fidelity signals</div>
+      <div><b>Hunt</b> · adversary behavior</div>
+      <div><b>Respond</b> · contain impact</div>
+      <div><b>Improve</b> · close coverage gaps</div>
+    </div>
+  </div>
+</section>
+
+<!-- connect / contact -->
+<section id="contact">
+  <div class="cta reveal">
+    <h2>Building stronger defense?<br><em>Let's connect.</em></h2>
+    <p>I'm interested in blue-team, threat hunting, detection engineering, incident response, threat intelligence, cloud security and security automation opportunities.</p>
+    <div class="cta-row" style="margin-bottom:32px">
+      <a href="https://github.com/securitycrossfire" target="_blank" class="btn btn-primary">Find me on GitHub <span class="arrow">↗</span></a>
+    </div>
+    <div class="socials">
+      <a href="https://github.com/securitycrossfire" target="_blank" class="social-card">
+        <div class="social-ico gh-ico">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+        </div>
+        <div class="social-info">
+          <div class="social-label">GitHub</div>
+          <div class="social-handle">@securitycrossfire</div>
+        </div>
+        <div class="social-arrow">↗</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- footer -->
+<footer>
+  <div class="foot">
+    <div class="foot-brand">
+      <div style="display:flex;align-items:center;gap:14px">
+        <img src="logo-mark.svg" alt="Yashon Ochieng" class="brand-logo" style="width:56px;height:56px">
+        <span style="font-family:'JetBrains Mono',monospace;font-weight:700;font-size:22px">Yashon <span style="color:var(--green)">Ochieng</span></span>
+      </div>
+      <p>Cyber defender focused on detecting what others miss, hunting adversaries, responding to attacks and building stronger security operations.</p>
+      <a href="https://github.com/securitycrossfire" target="_blank" class="btn btn-primary" style="margin-top:18px;width:fit-content">GitHub · @securitycrossfire <span class="arrow">↗</span></a>
+    </div>
+    <div>
+      <h5>Focus</h5>
+      <span class="foot-link">Threat Hunting</span>
+      <span class="foot-link">Detection Engineering</span>
+      <span class="foot-link">Incident Response</span>
+      <span class="foot-link">Threat Intelligence</span>
+    </div>
+    <div>
+      <h5>Build</h5>
+      <span class="foot-link">Security Automation</span>
+      <span class="foot-link">Cloud Defense</span>
+      <span class="foot-link">Purple Teaming</span>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <div>© 2026 YASHON OCHIENG · DETECT · HUNT · INVESTIGATE · DEFEND</div>
+    <div>BLUE TEAM · BUILT FOR DEFENSE</div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
