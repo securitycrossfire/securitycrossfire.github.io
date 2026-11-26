@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <title>Security Crossfire Blog</title>
+  <subtitle>Threat intelligence, hunting and defence notes by Yashon Ochieng.</subtitle>
+  <link href="https://securitycrossfire.github.io/feed.xml" rel="self" />
+  <link href="https://securitycrossfire.github.io/blog/" />
+  <updated>2026-11-26T16:04:03Z</updated>
+  <id>https://securitycrossfire.github.io/blog/</id>
+  <author>
+    <name>Yashon Ochieng</name>
+  </author>
+</feed>
