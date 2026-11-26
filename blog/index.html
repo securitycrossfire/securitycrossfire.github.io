@@ -3,59 +3,56 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Blog | Security Crossfire Blog</title>
-<meta name="description" content="Threat intelligence, threat hunting and defence notes by Yashon Ochieng." />
+<title>Security Crossfire</title>
+<meta name="description" content="Field notes on initial access, threat intelligence and detection by Yashon Ochieng." />
 
 <link rel="canonical" href="https://securitycrossfire.github.io/blog/" />
-<meta property="og:title" content="Blog" />
-<meta property="og:description" content="Threat intelligence, threat hunting and defence notes by Yashon Ochieng." />
+<meta property="og:site_name" content="Security Crossfire" />
+<meta property="og:title" content="Field notes on initial access and threat intelligence" />
+<meta property="og:description" content="Field notes on initial access, threat intelligence and detection by Yashon Ochieng." />
 <meta property="og:type" content="website" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<meta name="theme-color" content="#000000" />
+<link rel="preload" href="/blog/assets/fonts/newsreader-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/blog/assets/fonts/space-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" type="image/svg+xml" href="/blog/assets/logo-mark.svg">
 <link rel="stylesheet" href="/blog/assets/blog.css">
-<link rel="alternate" type="application/atom+xml" title="Security Crossfire Blog" href="/blog/feed.xml">
+<link rel="alternate" type="application/atom+xml" title="Security Crossfire" href="/blog/feed.xml">
+<script src="/blog/assets/blog.js" defer></script>
 </head>
-<body>
-<div class="grid-bg"></div>
-<div class="noise"></div>
+<body class="is-index">
+<a class="skip" href="#main">Skip to content</a>
 
 
-
-<nav class="nav">
+<header class="nav">
   <a href="https://securitycrossfire.github.io/" class="nav-logo">
-    <img src="/blog/assets/logo-mark.svg" alt="Yashon Ochieng" style="width:38px;height:38px">
-    <span class="mono" style="font-weight:700;font-size:17px">Yashon <span class="green">Ochieng</span></span>
+    <img src="/blog/assets/logo-mark.svg" alt="" width="34" height="34">
+    <span>Yashon <span class="green">Ochieng</span></span>
   </a>
-  <div class="nav-links">
+  <nav class="nav-links" aria-label="Site">
     <a href="https://securitycrossfire.github.io/#about">01 / About</a>
     <a href="https://securitycrossfire.github.io/#stack">02 / Approach</a>
     <a href="https://securitycrossfire.github.io/#work">03 / Work</a>
     <a href="https://securitycrossfire.github.io/#contact">04 / Connect</a>
-    <a href="/blog/" class="active">05 / Blog</a>
-  </div>
-  <a href="/blog/feed.xml" class="nav-cta"><span class="dot"></span>RSS</a>
-</nav>
-
-<main class="wrap">
-<header class="blog-head">
-  <span class="eyebrow mono">// security crossfire · blog</span>
-  <h1>Field notes from <em>the blue team.</em></h1>
-  <p>Threat intelligence, initial access, hunting and the defences that stop attackers. Aggregate findings, no named victims.</p>
+    <a href="/blog/" aria-current="page">05 / Blog</a>
+  </nav>
+  <a href="/blog/feed.xml" class="nav-cta">Subscribe via RSS</a>
 </header>
 
+<main id="main">
+<section class="intro">
+  <h1>Field notes on how attackers get in, and how to catch them</h1>
+  <p>Research on initial access brokers, exposed services and the dark web markets that trade in them, written for SOC analysts and threat hunters. Findings are aggregate; no affected organisation is ever named.</p>
+</section>
 
-<div class="empty mono">// first posts incoming. check back soon.</div>
+
+<p class="empty">The first post is being written. Subscribe via RSS to get it when it lands.</p>
 
 
 </main>
 
-<footer>
-  <div class="foot-bottom">
-    <div>© 2026 YASHON OCHIENG · DETECT · HUNT · INVESTIGATE · DEFEND</div>
-    <div><a href="https://securitycrossfire.github.io/">SECURITYCROSSFIRE.GITHUB.IO</a> · <a href="https://www.linkedin.com/in/yashon-ochieng-0872361b3/" target="_blank" rel="noopener">LINKEDIN ↗</a></div>
-  </div>
+<footer class="foot">
+  <p>© 2026 Yashon Ochieng. Research on this blog uses aggregate data and never names affected organisations.</p>
+  <p><a href="https://securitycrossfire.github.io/">Portfolio</a> <a href="https://www.linkedin.com/in/yashon-ochieng-0872361b3/" rel="noopener">LinkedIn</a> <a href="/blog/feed.xml">RSS</a></p>
 </footer>
 </body>
 </html>
